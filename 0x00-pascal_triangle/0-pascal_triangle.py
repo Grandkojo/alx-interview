@@ -1,4 +1,3 @@
-#hf!usr/bin/python3
 """
 Pascal Triangle
 """
