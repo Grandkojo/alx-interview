@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """utf-8 validation function"""
 
+
 def validUTF8(data):
     """Returns true if data is a valid encoding format else false"""
     bytes_to_follow = 0
-    
+
     for byte in data:
         if bytes_to_follow > 0:
             if not (byte & 0b11000000 == 0b10000000):
