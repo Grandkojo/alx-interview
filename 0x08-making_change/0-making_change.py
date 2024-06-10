@@ -5,7 +5,7 @@
 def makeChange(coins, total):
     """
     Given a pile of coins of different values,
-    determine the fewest number of coins needed to meet a given 
+    determine the fewest number of coins needed to meet a given
     amount `total`
 
     Args:
@@ -14,7 +14,7 @@ def makeChange(coins, total):
     """
     if total <= 0:
         return 0
-    
+
     value = total
     coins.sort()
     index = len(coins) - 1
@@ -28,6 +28,5 @@ def makeChange(coins, total):
 
     if total != sum(ans):
         return -1
-    
-    return len(ans)
 
+    return len(ans)
