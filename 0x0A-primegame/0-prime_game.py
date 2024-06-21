@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """The prime game module"""
 
+
 def isWinner(x, nums):
     """Determine the winner of the prime game.
 
     Args:
         x (int): Number of rounds.
         nums (list of int): Array of n values for each round.
-        
     Returns:
-        str: Name of the player that won the most rounds, or None if it's a tie.
+        str: Name of the player that won the most rounds,
+        or None if it's a tie.
     """
     def checkPrime(n):
         prime = [True for i in range(n+1)]
